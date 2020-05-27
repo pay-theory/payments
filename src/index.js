@@ -22,7 +22,6 @@ export const CreditCardProvider = (props) => {
 
     useEffect(() => {
         if (payTheory) {
-            payTheory.mount()
             payTheory.readyObserver(ready => setLoading(!ready))
             payTheory.transactedObserver(acted => setComplete(acted))
             payTheory.validObserver(validation => setValid(validation))
@@ -37,7 +36,8 @@ export const CreditCardProvider = (props) => {
             complete,
             valid,
             error,
-            initTransaction: buyerOptions => ()=>{}
+            mount: payTheory ? payTheory.mount : () => console.log('pay theory is not ready to mount payments'),
+            initTransaction: buyerOptions => tags.initTransaction(buyerOptions ? buyerOptions : {})
           }}
         >
             {props.children}

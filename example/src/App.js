@@ -1,10 +1,22 @@
-import React from 'react'
+import React from "react";
+import { CreditCard, usePayTheory } from "@paytheory/payments";
 
-import { ExampleComponent } from '@paytheory/payments'
-import '@paytheory/payments/dist/index.css'
+export default () => {
+    const { loading, complete, error } = usePayTheory()
 
-const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+    if (loading) {
+        return <div>Loading...</div>
+    }
+    if (complete) {
+        return <div>{complete}</div>
+    }
+    if (error) {
+        return <div>{error}</div>
+    }
+
+    return (
+        <div className="App">
+            <CreditCard />
+        </div>
+    )
 }
-
-export default App

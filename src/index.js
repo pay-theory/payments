@@ -4,10 +4,7 @@ import tags from '@paytheory/tags'
 export const PayTheoryContext = React.createContext()
 export const usePayTheory = () => useContext(PayTheoryContext)
 export const Input = () => (<div id="paytheory-tag" />)
-export const CreditCardProvider = ({
-    children,
-    ...inputOptions
-}) => {
+export const CreditCardProvider = (props) => {
     const [loading, setLoading] = useState(true)
     const [complete, setComplete] = useState(false)
     const [valid, setValid] = useState(false)
@@ -16,7 +13,7 @@ export const CreditCardProvider = ({
 
     useEffect(() => {
         const initPayTheory = async() => {
-            const payTheoryFromHook = await tags.create(...inputOptions)
+            const payTheoryFromHook = await tags.create(props.apiKey, props.client, props.amount, props.styles)
             setPayTheory(payTheoryFromHook)
             setLoading(false)
         };
@@ -43,7 +40,7 @@ export const CreditCardProvider = ({
             initTransaction: buyerOptions => ()=>{}
           }}
         >
-            {children}
+            {props.children}
         </PayTheoryContext.Provider>
     );
 }

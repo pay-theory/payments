@@ -1,6 +1,6 @@
 {
   "name": "@paytheory/payments",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "React components and hooks for pay theory payments",
   "author": "aron23",
   "license": "MIT",

@@ -1,15 +1,12 @@
 import React, { useState, useEffect, useContext } from "react"
-//import tags from '@paytheory/tags'
+import tags from '@paytheory/tags'
 
 export const PayTheoryContext = React.createContext()
 export const usePayTheory = () => useContext(PayTheoryContext)
 export const Input = () => (<div id="paytheory-tag" />)
 export const CreditCardProvider = ({
     children,
-    apiKey,
-    client,
-    amount,
-    styles
+    ...inputOptions
 }) => {
     const [loading, setLoading] = useState(true)
     const [complete, setComplete] = useState(false)
@@ -19,22 +16,22 @@ export const CreditCardProvider = ({
 
     useEffect(() => {
         const initPayTheory = async() => {
-            // const payTheoryFromHook = await tags.create(apiKey, client, amount, styles)
-            // setPayTheory(payTheoryFromHook)
+            const payTheoryFromHook = await tags.create(...inputOptions)
+            setPayTheory(payTheoryFromHook)
             setLoading(false)
         };
         initPayTheory()
     }, [])
 
-    // useEffect(() => {
-    //     if (payTheory) {
-    //         payTheory.mount()
-    //         payTheory.readyObserver(ready => setLoading(!ready))
-    //         payTheory.transactedObserver(acted => setComplete(acted))
-    //         payTheory.validObserver(validation => setValid(validation))
-    //         payTheory.errorObserver(errored => setError(errored))
-    //     }
-    // }, [payTheory])
+    useEffect(() => {
+        if (payTheory) {
+            payTheory.mount()
+            payTheory.readyObserver(ready => setLoading(!ready))
+            payTheory.transactedObserver(acted => setComplete(acted))
+            payTheory.validObserver(validation => setValid(validation))
+            payTheory.errorObserver(errored => setError(errored))
+        }
+    }, [payTheory])
 
     return (
         <PayTheoryContext.Provider

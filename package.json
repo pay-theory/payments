@@ -1,6 +1,6 @@
 {
   "name": "@paytheory/payments",
-  "version": "0.2.16-0",
+  "version": "0.2.15-0",
   "description": "React components and hooks for pay theory payments",
   "author": "aron23",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepublish": "run-s build",
-    "init-publish": "npm version prepatch && git push && npm publish",
+    "init-publish": "npm run build && npm version prepatch && git push && npm publish",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
     "test:lint": "eslint .",
@@ -26,7 +26,7 @@
   },
   "peerDependencies": {
     "react": "^16.13.1",
-    "@paytheory/tags": "^0.1.9"
+    "@paytheory/tags": "^0.1.12-0"
   },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",

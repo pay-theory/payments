@@ -3,7 +3,7 @@ import tags from '@paytheory/tags'
 
 export const PayTheoryContext = React.createContext()
 export const usePayTheory = () => useContext(PayTheoryContext)
-export const Input = () => (<div id="paytheory-tag" />)
+export const CreditCardInput = () => (<div id="paytheory-credit-card" />)
 export const CreditCardProvider = (props) => {
     const [loading, setLoading] = useState(true)
     const [complete, setComplete] = useState(false)

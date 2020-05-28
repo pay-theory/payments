@@ -14,12 +14,27 @@ npm install --save @paytheory/payments
 
 ### Import
 
+* CreditCardProvider is a component where you provide configuration, it provides the necessary context for payment processing
+* CreditCardInput is a component that extablishes the markup where the credit card input will appear
+* usePayTheory is a function that returns the context need for working with payments, it provides
+  * loading - a boolean state value that changes to false once pay theory is ready
+  * valid - can be undefined, true or false based on what has been entered
+  * error - contains an error message if not false
+  * mount - a function which will mount the payment input (must be called after CreditCardInput has been rendered)
+  * initTransaction - a function which accepts an option buyerOptions object and triggers card tokenization and authorization
+
 ```jsx
 import React, { useState, useEffect } from "react";
 import { CreditCardProvider, CreditCardInput, usePayTheory } from "@paytheory/payments";
 ```
 
 ### Configure
+
+* payments requires configuration of:
+  * a pay theory API key
+  * a paytheory clientId
+  * an amount in cents
+  * optionally styles you want applied
 
 ```jsx
 const api = "pt-sandbox-c421a13e91d2594cc627cdd982edb5ed";
@@ -54,6 +69,18 @@ const WrappedApp = props => {
 ```
 
 ### Process payments
+
+* to initialize the form mount() is called once
+* when the form is ready for submission call initTransaction and pass in optional buyerOptions
+* buyerOptions include
+  * name - the name on the card
+  * billing address composed of
+    * line1
+    * line2
+    * city
+    * region
+    * postal_code
+    * country
 
 ```jsx
 const App = props => {

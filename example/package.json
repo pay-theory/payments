@@ -4,10 +4,14 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@paytheory/payments": "file:..",
+    "@paytheory/tags": "^0.1.18-0",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "file:../node_modules/react-scripts",
-    "@paytheory/payments": "file:.."
+    "styled-jsx": "^3.3.0"
   },
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",

@@ -21,7 +21,7 @@ npm install --save @paytheory/payments
   * valid - can be undefined, true or false based on what has been entered
   * error - contains an error message if not false
   * mount - a function which will mount the payment input (must be called after CreditCardInput has been rendered)
-  * initTransaction - a function which accepts an option buyerOptions object and triggers card tokenization and authorization
+  * initTransaction - a function which accepts an optional buyerOptions object and triggers card tokenization and authorization
 
 ```jsx
 import React, { useState, useEffect } from "react";

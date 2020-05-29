@@ -13,7 +13,7 @@ export const CreditCardProvider = (props) => {
 
     useEffect(() => {
         const initPayTheory = async() => {
-            const payTheoryFromHook = await tags.create(props.apiKey, props.client, props.amount, props.styles)
+            const payTheoryFromHook = await tags.createCreditCard(props.apiKey, props.client, props.amount, props.styles)
             setPayTheory(payTheoryFromHook)
             setLoading(false)
         };

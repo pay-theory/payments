@@ -6,8 +6,12 @@
 
 ## Install
 
+* payments has the following peer dependencies
+  * @paytheory/tags
+  * react
+
 ```bash
-npm install --save @paytheory/payments
+npm install --save @paytheory/payments @paytheory/tags react
 ```
 
 ## Usage

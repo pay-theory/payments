@@ -9,6 +9,7 @@
 * payments has the following peer dependencies
   * @paytheory/tags
   * react
+  * react-dom
 
 ```bash
 npm install --save @paytheory/payments @paytheory/tags react react-dom

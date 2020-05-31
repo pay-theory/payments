@@ -11,7 +11,7 @@
   * react
 
 ```bash
-npm install --save @paytheory/payments @paytheory/tags react
+npm install --save @paytheory/payments @paytheory/tags react react-dom
 ```
 
 ## Usage

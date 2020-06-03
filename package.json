@@ -1,6 +1,6 @@
 {
   "name": "@paytheory/payments",
-  "version": "0.2.35-0",
+  "version": "0.2.36-0",
   "description": "React components and hooks for pay theory payments",
   "author": "aron23",
   "license": "MIT",
@@ -53,9 +53,9 @@
     "dist"
   ],
   "browserslist": [
-		"defaults",
-		"not IE 11",
-		"not IE_Mob 11",
-		"maintained node versions"
-	]
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ]
 }

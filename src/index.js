@@ -7,7 +7,7 @@ export const CreditCardInput = () => <div id="paytheory-credit-card" />;
 export const CreditCardProvider = props => {
     const [loading, setLoading] = useState(true);
     const [complete, setComplete] = useState(false);
-    const [valid, setValid] = useState(false);
+    const [valid, setValid] = useState(undefined);
     const [error, setError] = useState(undefined);
     const [payTheory, setPayTheory] = useState(undefined);
 

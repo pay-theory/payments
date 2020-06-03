@@ -38,19 +38,19 @@ export const CreditCardProvider = props => {
 
     return (
         <PayTheoryContext.Provider
-      value={{
-        loading,
-        complete,
-        valid,
-        error,
-        mount: payTheory
-          ? payTheory.mount
-          : () => console.log("pay theory is not ready to mount payments"),
-        initTransaction: buyerOptions =>
-          tags.initTransaction(buyerOptions ? buyerOptions : {})
-      }}
-    >
-      {props.children}
-    </PayTheoryContext.Provider>
+          value={{
+            loading,
+            complete,
+            valid,
+            error,
+            mount: payTheory
+              ? payTheory.mount
+              : () => console.log("pay theory is not ready to mount payments"),
+            initTransaction: buyerOptions =>
+              tags.initTransaction(buyerOptions ? buyerOptions : {})
+          }}
+        >
+          {props.children}
+        </PayTheoryContext.Provider>
     );
 };

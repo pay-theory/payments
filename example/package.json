@@ -1,26 +1,34 @@
 {
   "name": "@paytheory/payments-example",
-  "homepage": "https://aron23.github.io/@paytheory/payments",
-  "version": "0.0.0",
-  "private": true,
+  "homepage": "https://pay-theory.github.io/@paytheory/payments",
+  "version": "1.0.0",
+  "description": "React example starter project",
+  "keywords": [
+    "react",
+    "starter"
+  ],
+  "main": "src/index.js",
   "dependencies": {
+    "@paytheory/books-ui": "0.0.449-alpha.0",
     "@paytheory/payments": "file:..",
-    "@paytheory/tags": "^0.1.18-0",
-    "react": "file:../node_modules/react",
-    "react-dom": "file:../node_modules/react-dom",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "file:../node_modules/react-scripts",
-    "styled-jsx": "^3.3.0"
+    "@paytheory/tags": "0.1.55-0",
+    "auth0-spa-js": "^1.6.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "^3.4.1",
+    "react-syntax-highlighter": "12.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-loader": "^4.0.2",
+    "typescript": "3.9.5"
   },
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
     "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
     "test": "node ../node_modules/react-scripts/bin/react-scripts.js test",
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": [
     ">0.2%",

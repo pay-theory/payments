@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/@paytheory/payments/static/css/main.9b1431d8.chunk.css",
+    "main.js": "/@paytheory/payments/static/js/main.4e4ffe87.chunk.js",
+    "main.js.map": "/@paytheory/payments/static/js/main.4e4ffe87.chunk.js.map",
+    "runtime-main.js": "/@paytheory/payments/static/js/runtime-main.eb9d359e.js",
+    "runtime-main.js.map": "/@paytheory/payments/static/js/runtime-main.eb9d359e.js.map",
+    "static/js/2.55d97467.chunk.js": "/@paytheory/payments/static/js/2.55d97467.chunk.js",
+    "static/js/2.55d97467.chunk.js.map": "/@paytheory/payments/static/js/2.55d97467.chunk.js.map",
+    "index.html": "/@paytheory/payments/index.html",
+    "precache-manifest.29b79ed5156ba9bebd60cfb17f7b8f50.js": "/@paytheory/payments/precache-manifest.29b79ed5156ba9bebd60cfb17f7b8f50.js",
+    "service-worker.js": "/@paytheory/payments/service-worker.js",
+    "static/css/main.9b1431d8.chunk.css.map": "/@paytheory/payments/static/css/main.9b1431d8.chunk.css.map",
+    "static/js/2.55d97467.chunk.js.LICENSE.txt": "/@paytheory/payments/static/js/2.55d97467.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eb9d359e.js",
+    "static/js/2.55d97467.chunk.js",
+    "static/css/main.9b1431d8.chunk.css",
+    "static/js/main.4e4ffe87.chunk.js"
+  ]
+}

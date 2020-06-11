@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/@paytheory/payments/docs/precache-manifest.ad5657cb96a2b5463893b36d88fa466f.js"
+  "/@paytheory/payments/docs/precache-manifest.3131c2b68e238923683e90d2a66af11d.js"
 );
 
 self.addEventListener('message', (event) => {

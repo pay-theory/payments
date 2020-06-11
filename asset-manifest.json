@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/@paytheory/payments/docs/static/css/main.9b1431d8.chunk.css",
-    "main.js": "/@paytheory/payments/docs/static/js/main.4e4ffe87.chunk.js",
-    "main.js.map": "/@paytheory/payments/docs/static/js/main.4e4ffe87.chunk.js.map",
+    "main.js": "/@paytheory/payments/docs/static/js/main.bf47ddbc.chunk.js",
+    "main.js.map": "/@paytheory/payments/docs/static/js/main.bf47ddbc.chunk.js.map",
     "runtime-main.js": "/@paytheory/payments/docs/static/js/runtime-main.8cae05a5.js",
     "runtime-main.js.map": "/@paytheory/payments/docs/static/js/runtime-main.8cae05a5.js.map",
-    "static/js/2.55d97467.chunk.js": "/@paytheory/payments/docs/static/js/2.55d97467.chunk.js",
-    "static/js/2.55d97467.chunk.js.map": "/@paytheory/payments/docs/static/js/2.55d97467.chunk.js.map",
+    "static/js/2.310bff27.chunk.js": "/@paytheory/payments/docs/static/js/2.310bff27.chunk.js",
+    "static/js/2.310bff27.chunk.js.map": "/@paytheory/payments/docs/static/js/2.310bff27.chunk.js.map",
     "index.html": "/@paytheory/payments/docs/index.html",
-    "precache-manifest.ad5657cb96a2b5463893b36d88fa466f.js": "/@paytheory/payments/docs/precache-manifest.ad5657cb96a2b5463893b36d88fa466f.js",
+    "precache-manifest.3131c2b68e238923683e90d2a66af11d.js": "/@paytheory/payments/docs/precache-manifest.3131c2b68e238923683e90d2a66af11d.js",
     "service-worker.js": "/@paytheory/payments/docs/service-worker.js",
     "static/css/main.9b1431d8.chunk.css.map": "/@paytheory/payments/docs/static/css/main.9b1431d8.chunk.css.map",
-    "static/js/2.55d97467.chunk.js.LICENSE.txt": "/@paytheory/payments/docs/static/js/2.55d97467.chunk.js.LICENSE.txt"
+    "static/js/2.310bff27.chunk.js.LICENSE.txt": "/@paytheory/payments/docs/static/js/2.310bff27.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8cae05a5.js",
-    "static/js/2.55d97467.chunk.js",
+    "static/js/2.310bff27.chunk.js",
     "static/css/main.9b1431d8.chunk.css",
-    "static/js/main.4e4ffe87.chunk.js"
+    "static/js/main.bf47ddbc.chunk.js"
   ]
 }

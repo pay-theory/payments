@@ -1,0 +1,39 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React example starter project",
+  "keywords": [
+    "react",
+    "starter"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "@material/react-button": "0.15.0",
+    "@material/react-ripple": "0.15.0",
+    "@material/react-text-field": "0.15.0",
+    "@paytheory/books-ui": "0.0.442-alpha.0",
+    "@paytheory/payments": "0.2.38-0",
+    "@paytheory/tags": "0.1.55-0",
+    "auth0-spa-js": "1.6.5",
+    "react": "16.13.1",
+    "react-dom": "16.12.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "^3.4.1",
+    "react-syntax-highlighter": "12.2.1"
+  },
+  "devDependencies": {
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

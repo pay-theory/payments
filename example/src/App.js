@@ -5,7 +5,8 @@ import "./styles.css";
 // There was originally a router here, in index.js and in NavigationDrawer
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import { GlobalStyle, PortalHead, BooksHooks } from "@paytheory/books-ui";
+import { GlobalStyle, BooksHooks } from "@paytheory/books-ui";
+import PortalHead from './PortalHead';
 import { generateDocumentationMenu } from "./util";
 import NavigationDrawer from "./NavigationDrawer/NavigationDrawer";
 
@@ -28,7 +29,7 @@ export default function App() {
   };
 
   const demoAccount = {
-    user: { nickname: "demo" }
+    user: { display_name: "demo" }
   };
 
   return (
@@ -44,7 +45,7 @@ export default function App() {
           >
             <div id="container">
               <div id="pt-header" className="sticky">
-                <PortalHead logout={() => {}} />
+                <PortalHead />
               </div>
               <div className="body-container">
                 <NavigationDrawer

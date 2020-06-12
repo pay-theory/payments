@@ -10,9 +10,9 @@
   "main": "src/index.js",
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.9.0",
-    "@paytheory/books-ui": "0.0.452-0",
+    "@paytheory/books-ui": "0.0.453-0",
     "@paytheory/payments": "file:..",
-    "@paytheory/tags": "0.1.55-0",
+    "@paytheory/tags": "0.1.69-0",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-router": "^5.2.0",
@@ -32,7 +32,6 @@
     "moment": "^2.26.0",
     "react-dropzone": "^11.0.1",
     "typescript": "3.9.5",
-    "validator": "^13.1.0",
     "xlsx": "^0.16.2"
   },
   "scripts": {

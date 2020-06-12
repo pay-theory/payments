@@ -1,6 +1,6 @@
 # @paytheory/payments
 
-> React components and hooks for pay theory payments
+> React components and hooks for Pay Theory payments
 
 [![NPM](https://img.shields.io/npm/v/@paytheory/payments.svg)](https://www.npmjs.com/package/@paytheory/payments) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -19,10 +19,10 @@ npm install --save @paytheory/payments @paytheory/tags react react-dom
 
 ### Import
 
-* CreditCardProvider is a component where you provide configuration, it provides the necessary context for payment processing
-* CreditCardInput is a component that extablishes the markup where the credit card input will appear
-* usePayTheory is a function that returns the context need for working with payments, it provides
-  * loading - a boolean state value that changes to false once pay theory is ready
+* CreditCardProvider is a component where you provide configuration; it provides the necessary context for payment processing
+* CreditCardInput is a component that establishes the markup where the credit card input will appear
+* usePayTheory is a function that returns the context needed for working with payments, it provides
+  * loading - a boolean state value that changes to false once Pay Theory is ready
   * valid - can be undefined, true or false based on what has been entered
   * error - contains an error message if not false
   * mount - a function which will mount the payment input (must be called after CreditCardInput has been rendered)
@@ -36,8 +36,8 @@ import { CreditCardProvider, CreditCardInput, usePayTheory } from "@paytheory/pa
 ### Configure
 
 * payments requires configuration of:
-  * a pay theory API key
-  * a paytheory clientId
+  * a Pay Theory API key
+  * a Pay Theory Client ID
   * an amount in cents
   * optionally styles you want applied
 

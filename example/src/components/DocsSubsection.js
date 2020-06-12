@@ -129,7 +129,7 @@ export default props => {
           </div>
         </Link>
         <p>
-          Use our official libraries for access to the pay theory API from your
+          Use our official libraries for access to the Pay Theory API from your
           application:
         </p>
         <DocsCode
@@ -168,14 +168,14 @@ export default props => {
         <ul>
           <li>
             <b>CreditCardProvider</b> is a component where you provide
-            configuration, it provides the necessary context for
+            configuration; it provides the necessary context for payment processing
           </li>
           <li>
-            <b>CreditCardInput</b> is a component that extablishes the markup
+            <b>CreditCardInput</b> is a component that establishes the markup
             where the credit card input will appear
           </li>
           <li>
-            <b>usePayTheory</b> is a function that returns the context need for
+            <b>usePayTheory</b> is a function that returns the context needed for
             working with payments, it provides:
             <ul>
               <li>
@@ -224,8 +224,8 @@ export default props => {
           <b>CreditCardProvider</b>.
         </p>
         <ul>
-          <li>a pay theory API key</li>
-          <li>a paytheory clientId</li>
+          <li>a Pay Theory API key</li>
+          <li>a Pay Theory Client ID</li>
           <li>an amount in cents</li>
           <li>optionally styles you want applied</li>
         </ul>

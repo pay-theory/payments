@@ -17,7 +17,7 @@ export default props => {
         </p>
       </div>
       <p className="description">
-        This form will show you how to integrate Pay Theory into your account so
+        This form will show you how to integrate Pay Theory into your application so
         you can start accepting payments.
       </p>
       <div className="button-div">

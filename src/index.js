@@ -19,6 +19,7 @@ export const CreditCardProvider = (props) => {
                 props.amount,
                 props.styles
             )
+            console.log('setting paytheory',payTheoryFromHook)
             setPayTheory(payTheoryFromHook)
             setLoading(false)
         }

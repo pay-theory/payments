@@ -50,11 +50,11 @@ export const CreditCardProvider = (props) => {
                           console.log(
                               'pay theory is not ready to mount payments'
                           ),
-                initTransaction: (tags=[],buyerOptions={}) =>
+                initTransaction: (transactionTags=[],buyerOptions={}) =>
                     tags.initCreditCardTransaction(
                         props.apiKey,
                         props.client,
-                        tags,
+                        transactionTags,
                         buyerOptions)
             }}
         >

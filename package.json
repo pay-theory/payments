@@ -65,6 +65,6 @@
         "maintained node versions"
     ],
     "dependencies": {
-        "@paytheory/payment-components": "0.0.4-0"
+        "@paytheory/payment-components": "alpha"
     }
 }

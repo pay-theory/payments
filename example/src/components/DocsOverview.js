@@ -1,81 +1,81 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import * as ROUTES from "../routes";
-import Example from "../Example/Example";
+import * as ROUTES from '../routes'
+import Example from '../Example/Example'
 
-export default props => {
-  const githubLink = "https://github.com/pay-theory/payments";
-  const codeSandboxLink =
-    "https://codesandbox.io/s/paytheorypayments-demo-qr8rz";
+export default (props) => {
+    const githubLink = 'https://github.com/pay-theory/payments'
+    const codeSandboxLink =
+        'https://codesandbox.io/s/paytheorypayments-demo-qr8rz'
 
-  return (
-    <div className="docs-overview">
-      <div className="time">
-        <p>
-          <i className={`fal fa-clock`} /> 15 Minutes
-        </p>
-      </div>
-      <p className="description">
-        This form will show you how to integrate Pay Theory into your application so
-        you can start accepting payments.
-      </p>
-      <div className="button-div">
-        <h4>What you're building</h4>
-        <div className="sample-app">
-          <h4>Explore a sample app</h4>
-          <div className="app-links">
-            <a
-              href="/"
-              onClick={e => {
-                e.preventDefault();
-                window.open(githubLink, "_blank");
-              }}
-            >
-              <img src="resources/github.svg" alt="" />
-              <p>Github</p>
-            </a>
-            <a
-              href="/"
-              onClick={e => {
-                e.preventDefault();
-                window.open(codeSandboxLink, "_blank");
-              }}
-            >
-              <img src="resources/codesandbox.svg" alt="" />
-              <p>CodeSandbox</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="example">
-        <Example />
-      </div>
-      <p className="list-header">Overview</p>
-      <ol className="overview-list">
-        <li>
-          <Link
-            to={{
-              pathname: ROUTES.IMPORT,
-              state: { hash: ROUTES.IMPORT }
-            }}
-          >
-            Import
-          </Link>
-        </li>
-        <li>
-          <Link
-            to={{
-              pathname: ROUTES.USAGE,
-              state: { hash: ROUTES.USAGE }
-            }}
-          >
-            Usage
-          </Link>
-        </li>
-      </ol>
-      <style jsx="true">
-        {`
+    return (
+        <div className='docs-overview'>
+            <div className='time'>
+                <p>
+                    <i className={`fal fa-clock`} /> 15 Minutes
+                </p>
+            </div>
+            <p className='description'>
+                This form will show you how to integrate Pay Theory into your
+                application so you can start accepting payments.
+            </p>
+            <div className='button-div'>
+                <h4>What you're building</h4>
+                <div className='sample-app'>
+                    <h4>Explore a sample app</h4>
+                    <div className='app-links'>
+                        <a
+                            href='/'
+                            onClick={(e) => {
+                                e.preventDefault()
+                                window.open(githubLink, '_blank')
+                            }}
+                        >
+                            <img src='resources/github.svg' alt='' />
+                            <p>Github</p>
+                        </a>
+                        <a
+                            href='/'
+                            onClick={(e) => {
+                                e.preventDefault()
+                                window.open(codeSandboxLink, '_blank')
+                            }}
+                        >
+                            <img src='resources/codesandbox.svg' alt='' />
+                            <p>CodeSandbox</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className='example'>
+                <Example />
+            </div>
+            <p className='list-header'>Overview</p>
+            <ol className='overview-list'>
+                <li>
+                    <Link
+                        to={{
+                            pathname: ROUTES.IMPORT,
+                            state: { hash: ROUTES.IMPORT }
+                        }}
+                    >
+                        Import
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to={{
+                            pathname: ROUTES.USAGE,
+                            state: { hash: ROUTES.USAGE }
+                        }}
+                    >
+                        Usage
+                    </Link>
+                </li>
+            </ol>
+            <style jsx='true'>
+                {`
         
           .docs-overview {
             width: 100%;
@@ -203,7 +203,7 @@ export default props => {
         }
 
         `}
-      </style>
-    </div>
-  );
-};
+            </style>
+        </div>
+    )
+}

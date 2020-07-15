@@ -1,5 +1,5 @@
-import NavigationCategory from "./NavigationCategory";
+import NavigationCategory from './NavigationCategory'
 
-import NavigationItem from "./NavigationItem";
+import NavigationItem from './NavigationItem'
 
-export { NavigationCategory, NavigationItem };
+export { NavigationCategory, NavigationItem }

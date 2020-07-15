@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
-import tags from '@paytheory/tags'
+import tags from '@paytheory/payment-components'
 
 export const PayTheoryContext = React.createContext()
 export const usePayTheory = () => useContext(PayTheoryContext)
@@ -50,7 +50,7 @@ export const CreditCardProvider = (props) => {
                               'pay theory is not ready to mount payments'
                           ),
                 initTransaction: (buyerOptions) =>
-                    tags.initTransaction(buyerOptions ? buyerOptions : {})
+                    tags.initTransaction(buyerOptions ? buyerOptions : false)
             }}
         >
             {props.children}

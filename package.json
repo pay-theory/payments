@@ -15,7 +15,9 @@
         "build": "microbundle-crl --no-compress --format modern,cjs",
         "start": "microbundle-crl watch --no-compress --format modern,cjs",
         "prepublish": "run-s build",
-        "init-publish": "npm run prepublish && npm version prepatch && git push && npm publish",
+        "publish-dev-npm": "npm run build && npm version prepatch && git push && npm publish --tag alpha",
+        "publish-stage-npm": "npm run build && npm version prepatch && git push && npm publish --tag beta",
+        "publish-prod-npm": "npm run build && npm version prepatch && git push && npm publish",    
         "test": "run-s test:unit test:lint test:build",
         "test:build": "run-s build",
         "test:lint": "eslint .",
@@ -25,13 +27,12 @@
         "deploy-site": "gh-pages -d example/build"
     },
     "peerDependencies": {
-        "react": "^16.13.1",
-        "@paytheory/tags": "^0.1.73-0"
+        "react": "^16.13.1"
     },
     "devDependencies": {
         "babel-eslint": "^10.1.0",
         "cross-env": "^7.0.2",
-        "eslint": "^7.3.1",
+        "eslint": "^7.4.0",
         "eslint-config-prettier": "^6.11.0",
         "eslint-config-standard": "^14.1.1",
         "eslint-config-standard-react": "^9.2.0",
@@ -62,5 +63,8 @@
         "not IE 11",
         "not IE_Mob 11",
         "maintained node versions"
-    ]
+    ],
+    "dependencies": {
+        "@paytheory/payment-components": "0.0.4-0"
+    }
 }

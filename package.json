@@ -1,6 +1,6 @@
 {
     "name": "@paytheory/payments",
-    "version": "0.2.39-0",
+    "version": "0.2.40-0",
     "description": "React components and hooks for pay theory payments",
     "author": "aron23",
     "license": "MIT",
@@ -17,7 +17,7 @@
         "prepublish": "run-s build",
         "publish-dev-npm": "npm run build && npm version prepatch && git push && npm publish --tag alpha",
         "publish-stage-npm": "npm run build && npm version prepatch && git push && npm publish --tag beta",
-        "publish-prod-npm": "npm run build && npm version prepatch && git push && npm publish",    
+        "publish-prod-npm": "npm run build && npm version prepatch && git push && npm publish",
         "test": "run-s test:unit test:lint test:build",
         "test:build": "run-s build",
         "test:lint": "eslint .",

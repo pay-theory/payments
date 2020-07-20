@@ -20,7 +20,7 @@
         "place-dev": " cp package.dev.json package.json",
         "place-prod": " cp package.prod.json package.json",
         "fresh-install": "npm install && run-s build && npm version prepatch && git push",
-        "clean-working": "git add . && git commit -m '$MESSAGE'",
+        "clean-working": "git add . && git commit -m $MESSAGE",
         "clear-install": "npm run clear-mods && npm run place-dev && npm run fresh-install",
         "publish-dev-npm": "npm run clear install && npm publish --tag alpha",
         "publish-stage-npm": "npm run build && npm version prepatch && git push && npm publish --tag beta",

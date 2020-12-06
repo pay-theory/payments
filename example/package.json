@@ -19,7 +19,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "file:../node_modules/react-scripts",
     "styled-jsx": "^3.3.0",
-    "react-syntax-highlighter": "12.2.1"
+    "react-syntax-highlighter": "13.0.0"
   },
   "devDependencies": {
     "@material/react-button": "^0.15.0",
